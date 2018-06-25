@@ -14,7 +14,8 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Generated via HtmlWebpackPlugin'
+            title: 'Generated via HtmlWebpackPlugin',
+            template: 'src/index.html'
         })
     ],
     output: {
